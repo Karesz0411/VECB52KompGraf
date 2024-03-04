@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="VECB52_4.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.99150695"
+     inkscape:cx="240.03866"
+     inkscape:cy="625.81508"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch1"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch1"
+       id="linearGradient1"
+       x1="55.37831"
+       y1="107.16509"
+       x2="58.364703"
+       y2="107.16509"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Réteg 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path1"
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-dasharray:none"
+       transform="translate(40.379924,6.7928844)"
+       d="M 59.626428,101.90566 48.656274,61.16202 7.9126358,50.191869 48.656274,39.221715 59.626425,-1.5219231 70.596579,39.221716 111.34022,50.191866 70.596579,61.16202 Z" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:0;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;fill:#1a1a1a;fill-opacity:1;stroke:url(#linearGradient1);stroke-width:0.2;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="text1"><textPath
+         xlink:href="#path1"
+         startOffset="50%"
+         id="textPath1"><tspan
+           id="tspan1"
+           style="font-size:4.23333px;fill:#1a1a1a;fill-opacity:1;stroke:url(#linearGradient1);stroke-width:0.2;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">A begépelt szöveg utólagosan helyezhető az alakzatok körvonalára </tspan></textPath></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 79.51391,117.28212 c -2.802223,-0.005 -5.598796,0.53412 -8.398454,1.8495 v 31.43994 c 2.450702,-1.12982 4.902965,-1.6926 7.35459,-1.80868 0.347924,-0.0165 0.695954,-0.0241 1.043864,-0.0238 1.043729,0.001 2.087274,0.0763 3.130041,0.21343 5.561424,0.73159 11.112029,3.21428 16.673918,5.62704 5.561881,2.41277 11.134361,4.75598 16.724551,5.23224 4.351,0.37069 8.71258,-0.39028 13.1129,-3.12332 v -31.4048 c -4.40334,2.6856 -8.78774,3.4428 -13.13822,3.07216 -5.65616,-0.48188 -11.25679,-2.84237 -16.820671,-5.25601 -5.563891,-2.41365 -11.091883,-4.88186 -16.591752,-5.60534 -1.031225,-0.13566 -2.0614,-0.21043 -3.090767,-0.21239 z"
+       id="path5" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:0;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="text6"><textPath
+         xlink:href="#path5"
+         startOffset="50%"
+         id="textPath6"><tspan
+           id="tspan6"
+           style="fill:#000000;fill-opacity:1;stroke-width:0.2;stroke-dasharray:none">A begépelt szöveg utólagosan helyezhető az alakzatok körvonalára </tspan></textPath></text>
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path6"
+       cx="100.73576"
+       cy="202.67235"
+       r="28.686342" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:0;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="text7"><textPath
+         xlink:href="#path6"
+         startOffset="50%"
+         id="textPath7"><tspan
+           id="tspan7"
+           style="fill:#000000;fill-opacity:1;stroke-width:0.2">A begépelt szöveg utólagosan helyezhető az alakzatok körvonalára </tspan></textPath></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2777px;line-height:0;font-family:Stencil;-inkscape-font-specification:Stencil;text-align:center;text-anchor:middle;fill:#ffff00;stroke:#000000;stroke-width:0.2;stroke-miterlimit:0"
+       x="112.61057"
+       y="176.38765"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="stroke-width:0.2"></tspan></text>
+  </g>
+</svg>
