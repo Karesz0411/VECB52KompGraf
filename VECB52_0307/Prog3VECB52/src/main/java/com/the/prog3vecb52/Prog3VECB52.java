@@ -3,6 +3,7 @@
  */
 
 package com.the.prog3vecb52;
+
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.awt.FlowLayout;
@@ -25,7 +26,15 @@ public class Prog3VECB52 extends JFrame {
         add(label_1);
         add(label_2);
         
-        setLayout(new FlowLayout());
+        /******
+        ******* 2. task
+        ******/
+        //setLayout(new FlowLayout());
+
+        /******
+        ******* 3. task
+        *******/
+        setLayout(null);
         
         setSize(400, 300);
         //pack();
