@@ -8,6 +8,9 @@ package hu.the.vecb52;
  *
  * @author Hallgató
  */
+
+import java.io.IOException;
+import java.io.InputStream;
 import org.lwjgl.*;
 import org.lwjgl.glfw.*;
 import org.lwjgl.opengl.*;
@@ -20,11 +23,14 @@ import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.system.MemoryStack.*;
 import static org.lwjgl.system.MemoryUtil.*;
+import org.lwjgl.stb.STBTTFontinfo;
+import org.lwjgl.stb.STBTruetype;
 
 public class HelloWorld {
 
 	// The window handle
 	private long window;
+        private STBTTFontinfo font;
 
 	public void run() {
 		System.out.println("Hello LWJGL " + Version.getVersion() + "!");
@@ -40,11 +46,52 @@ public class HelloWorld {
 		glfwTerminate();
 		glfwSetErrorCallback(null).free();
 	}
+        
+        private void drawText(float x, float y, String text) {
+                FloatBuffer xBuffer = BufferUtils.createFloatBuffer(1);
+                FloatBuffer yBuffer = BufferUtils.createFloatBuffer(1);
+
+                // Eltoljuk a rajzolás helyét
+                glTranslatef(x, y, 0);
+
+                // Kirajzoljuk a szöveget karakterenként
+                for (int i = 0; i < text.length(); i++) {
+                    char c = text.charAt(i);
+                    STBTruetype.stbtt_GetPackedQuad(font, 512, 512, c, xBuffer, yBuffer, null, null);
+                    glBegin(GL_QUADS);
+                    glTexCoord2f(xBuffer.get(0), yBuffer.get(0));
+                    glVertex2f(xBuffer.get(0), yBuffer.get(0));
+                    glTexCoord2f(xBuffer.get(0 + 1), yBuffer.get(0 + 1));
+                    glVertex2f(xBuffer.get(0 + 1), yBuffer.get(0 + 1));
+                    glTexCoord2f(xBuffer.get(0 + 2), yBuffer.get(0 + 2));
+                    glVertex2f(xBuffer.get(0 + 2), yBuffer.get(0 + 2));
+                    glTexCoord2f(xBuffer.get(0 + 3), yBuffer.get(0 + 3));
+                    glVertex2f(xBuffer.get(0 + 3), yBuffer.get(0 + 3));
+                    glEnd();
+                }
+
+                // Visszaállítjuk a rajzolás helyét
+                glLoadIdentity();
+            }
 
 	private void init() {
 		// Setup an error callback. The default implementation
 		// will print the error message in System.err.
 		GLFWErrorCallback.createPrint(System.err).set();
+                font = STBTTFontinfo.create();
+                font = STBTTFontinfo.create();
+
+                // Betűtípus fájl beolvasása
+                try (InputStream is = getClass().getResourceAsStream("/path/to/font.ttf")) {
+                    byte[] fontBytes = is.readAllBytes();
+                    ByteBuffer ttf = ByteBuffer.allocateDirect(fontBytes.length);
+                    ttf.put(fontBytes).flip(); // flip() szükséges a buffer átállításához olvasási módra
+                    STBTruetype.stbtt_InitFont(font, ttf);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+
 
 		// Initialize GLFW. Most GLFW functions will not work before doing this.
 		if ( !glfwInit() )
@@ -110,6 +157,7 @@ public class HelloWorld {
 		while ( !glfwWindowShouldClose(window) ) {
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // clear the framebuffer
 
+                        drawText(100, 150, "Hello LWJGL!"); // kiírjuk a szöveget
 			glfwSwapBuffers(window); // swap the color buffers
 
 			// Poll for window events. The key callback above will only be
