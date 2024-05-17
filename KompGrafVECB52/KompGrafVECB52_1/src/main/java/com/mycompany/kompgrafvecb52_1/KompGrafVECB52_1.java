@@ -46,7 +46,7 @@ public class KompGrafVECB52_1 extends JFrame{
                 g.setColor(Color.blue);
                 Font font = new Font("Arial", Font.BOLD, 24);
                 g.setFont(font);
-                g.drawString("Mihály Károly beadandó", 100 , 50);
+                g.drawString("Mihály Károly projektmunka", 100 , 50);
                 
                 g2d.fillOval(180, 190, 150, 120);
                 
